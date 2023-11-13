@@ -18,16 +18,20 @@ Count the number of words
 ### Step 6: 
 Giving print statement for getting output
 ## PROGRAM:
-```
-num_words =0
-with open('text.txt','r') as file1:
- for i in file1:
- word =i.split()
- num_words += len(word)
-print("Number of words={}".format(num_words))
+```PYTHON
+# REGISTER NO : 212222240029
+# NAME: GANESH R
+
+fname=input("enter the file name:")
+num_words=0
+with open(fname,'r')as f:
+    for line in f:
+        words=line.split()
+        num_words+=len(words)
+print('Number of words: ',num_words)   
 ```
 ### OUTPUT:
-![outout](./WhatsApp%20Image%202023-01-26%20at%2011.12.36.jpg)
+![PY9](https://github.com/ganesha360/Word-count/assets/120884552/7374583c-4332-424d-a698-9cd764fce074)
 
 ## RESULT:
 Thus the program is written to find the word count from a text.
